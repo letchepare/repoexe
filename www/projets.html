@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+
+    <title>RepoExe Projets</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="theme.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Menu -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">RepoExe</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="./index.html">Accueil</a></li>
+            <li class="active"><a href="/projets.html">Projets</a></li>
+           <!-- <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron" style="margin: 7em 0 0 0; padding: 3em 4em 4em 4em; background-image:url(images/jumbotron_background.jpg); background-position:center center; background-size: auto ; background-repeat:no-repeat; ">
+	  <a href="http://repoexesjp.livehost.fr"><h1 align="center" style="color:white">Repo Exe</h1></a>
+        <p style="color:white" align="center">Bienvenue sur notre site, nous sommes deux étudiants en informatique qui avons pour projet 17 logiciels à développer. Vous pourrez suivre ici l'avancée de chacuns de ces projets.</p>
+      </div>
+	</div>
+	<div class="container" style="margin:2.25% auto auto auto">
+  	<div class="panel panel-default">
+	<div class="panel-body">
+    <div class="container">
+	<div class="page-header" style="border-bottom:0px solid #eee;" >
+        <h1 align="center">Avancement des projets</h1>
+      <div class="row"  >
+        <div class="col-md-12" >
+          <table class="table table-bordered " >
+            <thead>
+              <tr>
+                <th>Nom</th>
+                <th>Langages</th>
+                <th>Dificulté</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr> <!-- Boulangerie -->
+                <td><a href="#" onclick="boulangerieindex()">Boulangerie </a><span class="label label-success">Fini</span></td>
+                <td><span class="label label-cpp">C++</span> <span class="label label-python">Python</span></td>
+                <td> <span class="label label-facile">Facile</span></td>
+              </tr>
+              <tr> <!-- Volume Tonneau -->
+                <td><a href="#" onclick="tonneauindex()">Calcul Volume Tonneau </a> <span class="label label-success">Fini</span></td>
+                <td><span class="label label-cpp">C++</span> <span class="label label-python">Python</span> <span class="label label-rby">Ruby</span> </td>
+                <td><span class="label label-facile">Facile</span></td>
+              </tr>
+			  <tr> <!-- Calculatrice Console -->
+                <td><a href="#" onclick="calconsindex()">Calculatrice Console</a> <span class="label label-warning">WIP</span></td>
+                <td><span class="label label-python">Python</span> <span class="label label-rby">Ruby</span> </td>
+				<td><span class="label label-facile">Facile</span></td>
+              </tr>
+              <tr> <!-- Sound-Bomb (mp3) -->
+                <td>Sound-Bomb (mp3) <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- Console Piano -->
+                <td>Console Piano <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- Client Mail Console -->
+                <td>Client Mail Console <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- Simple Keylogger -->
+                <td>Simple Keylogger <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- Calculatrice Graphique -->
+                <td>Calculatrice Graphique <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- ImgViewer -->
+                <td>ImgViewer simple <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- Site Repo -->
+                <td><a href="#repoexe" onclick="repoexe()">Site repo exe </a><span class="label label-warning">WIP</span></td>
+                <td><span class="label label-html">HTML</span> <span class="label label-css">CSS</span> <span class="label label-js">JavaScript</span></td>
+				<td> <span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- Mail Bomber  -->
+                <td>Mail Bomber <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- Editeur de Texte Simple / Simple text editor -->
+                <td>Simple éditeur de texte <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-moyen">Moyen</span></td>
+              </tr>
+              <tr> <!-- Chat réseau -->
+                <td>Chat réseau <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-difficile">Difficile</span></td>
+              </tr>
+              <tr> <!-- Simple Navigateur Web -->
+                <td>Navigateur Web simple <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-difficile">Dfficile</span></td>
+              </tr>
+              <tr> <!-- Calculatrice Simple android -->
+                <td>Simple Calculatrice <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-java">Java Android</span> </td>
+				<td><span class="label label-difficile">Difficile</span></td>
+              </tr>
+              <tr> <!-- Simple music player  -->
+                <td>Simple Music Player <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-difficile">Difficile</span></td>
+              </tr>
+              <tr> <!-- Simple Video Player -->
+                <td>Simple Video Player <span class="label label-nstart">Non Commencé</span></td>
+                <td><span class="label label-info">Indéfini</span> </td>
+				<td><span class="label label-difficile">Difficile</span></td>
+              </tr>
+			  <tr> <!-- Références -->
+                <td>Références : (<span class="label label-nstart">Non Commencé</span>  <span class="label label-warning">Work In Progress</span>  ou <span class="label label-success">Fini</span>)</td>
+                <td><span class="label label-cpp">C++</span> <span class="label label-python">Pyhton</span> <span class="label label-html">HTML</span> <span class="label label-css">CSS</span> <span class="label label-js">JavaScript</span> <span class="label label-java">Java</span> <span class="label label-rby">Ruby</span> & <span class="label label-java">Java Android</span> </td>
+				<td><span class="label label-facile">facile</span> <span class="label label-moyen">Moyen</span> <span class="label label-difficile">Difficile</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+	  </div>
+	</div>
+	</div>
+	</div>
+	</div>
+	<footer class="footer" style="margin:5% 0 4% 0;">
+        <p>&copy; 2016 Etchepare Lilian & Vanelian Julien</p>
+    </footer>
+	</div>
+	<!-- Tableau projets -->
+
+
+
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.js"><\/script>')</script>
+    <script src="dist/js/bootstrap.js"></script>
+    <script src="assets/js/docs.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+	<script src="jscust/liens.js"></script>
+    <script src="holder.js"></script>
+  </body>
+
+</html>
